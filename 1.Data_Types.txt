@@ -1,0 +1,65 @@
+//  Types of Data_types in the flutter
+/*
+
+1. String: Used to represent text.
+2. int: Used to represent integer values.
+3. double: Used to represent floating-point numbers.
+4. bool: Used to represent true or false values.
+5. List: Used to represent an ordered collection of items.
+6. Map: Used to represent a collection of key-value pairs.
+7. Set: Used to represent an unordered collection of unique items.
+8. dynamic: Used when the type is not known until runtime.
+9. var: Used to infer the type from the assigned value.
+10. const: Used for compile-time constants.
+11. final: Used for runtime constants.
+
+*/ 
+void main() {
+  // String: Used to represent text.
+  String greeting = 'Hello, Dart!';
+  print(greeting);
+
+  // int: Used to represent integer values.
+  int age = 25;
+  print('Age: $age');
+
+  // double: Used to represent floating-point numbers.
+  double height = 5.9;
+  print('Height: $height');
+
+  // bool: Used to represent true or false values.
+  bool isStudent = true;
+  print('Is student: $isStudent');
+
+  // List: Used to represent an ordered collection of items.
+  List<String> fruits = ['Apple', 'Banana', 'Cherry'];
+  print('Fruits: $fruits');
+
+  // Map: Used to represent a collection of key-value pairs.
+  Map<String, int> fruitPrices = {
+    'Apple': 2,
+    'Banana': 1,
+    'Cherry': 3
+  };
+  print('Fruit prices: $fruitPrices');
+
+  // Set: Used to represent an unordered collection of unique items.
+  Set<String> uniqueFruits = {'Apple', 'Banana', 'Cherry'};
+  print('Unique fruits: $uniqueFruits');
+
+  // dynamic: Used when the type is not known until runtime.
+  dynamic anything = 'Could be anything';
+  print(anything);
+
+  // var: Used to infer the type from the assigned value.
+  var inferredType = 12345;
+  print('Inferred type: $inferredType');
+
+  // const: Used for compile-time constants.
+  const pi = 3.14159;
+  print('PI: $pi');
+
+  // final: Used for runtime constants.
+  final DateTime now = DateTime.now();
+  print('Current time: $now');
+}

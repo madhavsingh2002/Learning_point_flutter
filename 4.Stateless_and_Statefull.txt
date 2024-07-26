@@ -1,0 +1,11 @@
+The primary difference between StatelessWidget and StatefulWidget in Flutter is how they handle state:
+
+1. StatelessWidget:
+   - Immutable: Once created, it does not change over time.
+   - No Internal State: It doesn't maintain any mutable state. The UI is rebuilt only when its input data changes.
+   - Use Case: Ideal for static UIs or widgets that depend solely on external data.
+
+2. StatefulWidget:
+   - Mutable: Can change over time due to user interactions or other events.
+   - Internal State: Maintains a state object that can be updated to reflect changes in the UI.
+   - Use Case: Suitable for dynamic UIs where the widget’s state might change based on user input or other factors.

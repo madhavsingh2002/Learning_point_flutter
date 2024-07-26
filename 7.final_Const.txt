@@ -1,0 +1,53 @@
+const:
+
+- Compile-Time Constant: The value is determined at compile-time.
+- Immutable: The value cannot be changed after it is assigned.
+- Memory Efficiency: Because they are compile-time constants, they are more memory-efficient since the same constant value is shared across different places in the code.
+- Usage: Use `const` when you know the value at compile time and it will never change.
+
+Example:
+const double pi = 3.14159;
+
+`pi` is a compile-time constant. 
+Its value is known and fixed at compile time.
+
+final:
+
+- Run-Time Constant: The value is determined at runtime.
+- Immutable: The value cannot be changed after it is assigned.
+- Unique Instance: Each `final` variable can have its own unique instance.
+- Usage: Use `final` when the value is known only at runtime or when you need to create a constant that is assigned once and does not change.
+
+Example:
+final DateTime timenow = DateTime.now();
+
+`timenow` is a runtime constant. 
+Its value is assigned when the program runs and represents the current date and time at that moment.
+
+Summary of Differences:
+
+1. Determination Time:
+   - `const`: Value is determined at compile-time.
+   - `final`: Value is determined at runtime.
+
+2. Mutability:
+   - Both `const` and `final` are immutable after assignment.
+
+3. Instance Sharing:
+   - `const`: The same constant value is shared across the program.
+   - `final`: Each `final` variable can have a unique value.
+
+Practical Examples:
+
+void main() {
+  // const example
+  const double gravity = 9.8; // Earth's gravity is a constant value
+  print('Gravity: $gravity');
+
+  // final example
+  final DateTime currentTime = DateTime.now(); // The current time when the program runs
+  print('Current time: $currentTime');
+}
+
+Use `const` for values that are always the same and known at compile time. 
+Use `final` for values that are determined once at runtime but do not change thereafter.

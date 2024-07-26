@@ -1,0 +1,7 @@
+Flutter's architecture consists of:
+
+1. Widgets: The basic building blocks for creating UI elements in Dart.
+2. Rendering Engine: Handles the low-level painting and layout, powered by C++ and Skia.
+3. Framework: Provides a rich set of pre-designed widgets and tools for building complex UIs.
+4. Dart Virtual Machine: Executes Dart code, manages garbage collection, and supports hot reload.
+5. Platform Channels: Facilitate communication between Dart code and native platform code.

@@ -1,0 +1,8 @@
+In Flutter, Widgets are the fundamental building blocks for creating user interfaces. 
+They describe what their view should look like in a given state. Widgets are:
+
+1. Immutable: Once created, their configuration can't be changed.
+2. Compositional: Widgets can be combined to build complex UIs.
+3. Stateful or Stateless: Stateful widgets can change their state during runtime, while stateless widgets remain static.
+4. Declarative: They use a declarative approach to describe UI elements, making it easy to build and update interfaces.
+5. Hierarchical: Widgets are organized in a tree structure, where each widget can have child widgets, forming a hierarchy.

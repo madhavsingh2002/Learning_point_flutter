@@ -1,0 +1,34 @@
+Navigating between screens in Flutter is typically handled using the `Navigator` and `Route` classes. 
+Here are the common methods for navigating between screens:
+
+1. Basic Navigation:
+   - Navigator.push: Pushes a new route onto the stack, navigating to a new screen.
+   - Navigator.pop: Pops the current route off the stack, returning to the previous screen.
+
+   // Navigating to a new screen
+   Navigator.push(
+     context,
+     MaterialPageRoute(builder: (context) => NewScreen()),
+   );
+
+   // Returning to the previous screen
+   Navigator.pop(context);
+
+2. Named Routes:
+   - Define Routes: Define routes in the `MaterialApp` or `CupertinoApp` widget.
+
+   ```dart
+   MaterialApp(
+     initialRoute: '/',
+     routes: {
+       '/': (context) => HomeScreen(),
+       '/new': (context) => NewScreen(),
+     },
+   );
+   ```
+
+   - Navigate Using Named Routes:
+
+   ```dart
+   Navigator.pushNamed(context, '/new');
+   ```
